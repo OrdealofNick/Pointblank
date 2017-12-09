@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
@@ -11,6 +11,13 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-Pointblank-e865eddf-49a8-4bf2-9e02-9efca5e74413</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\images\botw.jpg" />
+    <Content Include="wwwroot\images\persona5.jpg" />
+    <Content Include="wwwroot\images\watchdogs2.jpg" />
+    <Content Include="wwwroot\images\witcher3.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />

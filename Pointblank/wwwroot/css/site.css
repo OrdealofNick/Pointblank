@@ -1,46 +1,86 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    font-family: 'Exo 2', sans-serif;
 }
-
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+/*NAVBAR CLASSES*/
+.blog-nav {
+    padding: 10px;
+    background: #808080;
+    margin-bottom:0;
+    border:0px;
+    color:black
 }
-
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+.logo{
+    font-size: 35px;
 }
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+.logo:hover{
+    color:black;
 }
-
-/* buttons and links extension to use brackets: [ click me ] */
-.btn-bracketed::before {
-    display: inline-block;
-    content: "[";
-    padding-right: 0.5em;
+.blog-nav small{
+    font-size:17px;
 }
-
-.btn-bracketed::after {
-    display: inline-block;
-    content: "]";
-    padding-left: 0.5em;
+.nav-border a:hover, :focus{
+    text-decoration:none;
 }
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+.navbar-default .navbar-brand{
+    color:white;
+}
+.navbar-default .navbar-brand:hover{
+    color:black;
+}
+/*ARTICLES CSS*/
+.article-blog {
+    float: left;
+    /*width:450px;*/
     width: 100%;
+    height: 875px;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
+.witcher {
+    background-image: url(../images/witcher3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.article-blog:hover {
+    opacity: 0.8;
+}
+
+.botw {
+    background-image: url(../images/botw.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wd2 {
+    background-image: url(../images/watchdogs2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.persona5 {
+    background-image: url(../images/persona5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+article header {
+    padding: 0.5em;
+    font-size: 40px;
+    font-weight: bold;
+    color: white
+}
+
+div.col-md-2 {
+    padding: 0;
+}
+div.container-fluid {
+    background-color: #D1C9BE;
+}
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
